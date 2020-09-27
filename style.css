@@ -1,0 +1,68 @@
+html {
+  background: url(https://source.unsplash.com/weekly?water);
+  background-size: cover;
+}
+
+* {
+  font: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Robot, Oxygen, Ubuntu, Cantarell, "Fira Sans",
+    "Droid Sans", Helvetica, Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex: 1;
+}
+
+.timer {
+  position: relative;
+  display: inline-block;
+}
+
+.dial {
+  height: 400px;
+  width: 400px;
+}
+
+.timer input {
+  display: block;
+  border: none;
+  width: 240px;
+  font-size: 90px;
+  text-align: center;
+  background: transparent;
+}
+
+.timer button {
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.timer button:focus {
+  outline: none;
+}
+
+.timer input:focus {
+  outline: none;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
