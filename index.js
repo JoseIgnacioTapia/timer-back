@@ -25,3 +25,7 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
     console.log("Timer is completed");
   },
 });
+
+durationInput.addEventListener("change", () => {
+  duration = parseFloat(this.value);
+});
