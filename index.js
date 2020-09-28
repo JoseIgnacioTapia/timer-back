@@ -25,7 +25,7 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
     console.log("Timer is completed");
   },
 });
-
+// Se agrego un evento para que cada vez que se ingrese un valor al input la animación comienze desde el inicio de la circunferencia
 durationInput.addEventListener("change", () => {
   duration = parseFloat(this.value);
 });
