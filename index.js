@@ -9,12 +9,13 @@ circle.setAttribute("stroke-dasharray", perimeter);
 let duration;
 const timer = new Timer(durationInput, startButton, pauseButton, {
   onStart(totalDuration) {
-    duration = totalDuration;
+    duration = totalDuration; // Guardamos el tiempo total cuando el tiempo esta en pausa y se clickea el boton start
   },
   onTick(timeRemaining) {
+    // Agrega el atributo a la etiqueta svg cada vez que se ejecuta tick y onTick
     circle.setAttribute(
       "stroke-dashoffset",
-      (perimeter * timeRemaining) / duration - perimeter
+      (perimeter * timeRemaining) / duration - perimeter // formula para calcular la medida del atributo que dará el efecto animado
     );
   },
   onComplete() {
